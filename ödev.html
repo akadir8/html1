@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Arama</title>
     <style>
-        div {
-            text-align: center;
-        }
-        form{
-            text-align: center;
-        }
-        input#image-search-input{
-            text-decoration: line-through;
-            background-color: red;
-        }
+      * {
+        text-align: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div>
       <img
         src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         alt="Google Logo"
       />
     </div>
-    <form action="https://www.google.com/search" method="GET">
-      <label for="search-input">Arama:</label>
-      <input type="text" id="search-input" name="f" />
-      <button type="submit">Ara</button>
+    <form action="http://www.google.com.tr/search?q=" method="get">
+      <p>
+        Google'da Ara : <input type="text" name="q" placeholder="Arama yapmak için kelime veya kelime öbeği giriniz..." />
+        <input type="submit" value=" Ara " name="Ara" />
+      </p>
     </form>
-    <form action="https://www.google.com/search" method="GET">
-      <label for="image-search-input">Görsel Ara:</label>
-      <input type="text" id="image-search-input" name="tbm" value="isch" />
-      <input type="text" id="image-query-input" name="q" />
-      <button type="submit">Ara</button>
+
+    <form action="https://www.google.com/search" method="get">
+     Görsel Ara : <input
+        type="text"
+        name="q"
+        placeholder="Görsel aramak için kelime veya kelime öbeği girin...."
+      />
+      <input type="submit" value="Google'da ara" />
+      <input type="hidden" name="tbm" value="isch" />
     </form>
   </body>
 </html>
