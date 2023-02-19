@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arama sayfası</title>
-  </head>
-  <body>
-    <div align="center">
-      <form action="http://www.google.com/search" target="_blank" name="f">
-        <table
-          height="15"
-          width="159"
-          align="center"
-        >
-          <tbody>
-            <tr>
-              <td>
-                <a
-                  title="Google.Com"
-                  target="_blank"
-                  href="http://www.google.com.tr"
-                  ><img
-                    alt=""
-                    src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d2abd662597191.5a9589b09ddf5.jpg" height="200" width="200"/></a
-                ><br />
-                <input
-                  style="font-size: 10pt; text-align: center"
-                  mce_style="FONT-SIZE: 10pt; TEXT-ALIGN: center"
-                  maxlength="256"
-                  size="18"
-                  name="q"
-                />
-                <input type="submit" name="kadir" value="Google'da Ara" />
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </form>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Arama</title>
+    <style>
+        div {
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+        input#image-search-input{
+            text-decoration: line-through;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+      <img
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="Google Logo"
+      />
     </div>
+    <form action="https://www.google.com/search" method="GET">
+      <label for="search-input">Arama:</label>
+      <input type="text" id="search-input" name="f" />
+      <button type="submit">Ara</button>
+    </form>
+    <form action="https://www.google.com/search" method="GET">
+      <label for="image-search-input">Görsel Ara:</label>
+      <input type="text" id="image-search-input" name="tbm" value="isch" />
+      <input type="text" id="image-query-input" name="q" />
+      <button type="submit">Ara</button>
+    </form>
   </body>
 </html>
